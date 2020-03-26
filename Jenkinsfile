@@ -1,6 +1,6 @@
 #!groovy
 
-@Libary('jenkinslib')
+@Library('jenkinslib')
 
 def tools = new org.devops.tools()
 
@@ -71,7 +71,7 @@ pipeline {
                             script{
                                 println('代码扫描')
 
-                                tools.printMes("This is my Libary!")
+                                tools.PrintMes("This is my Libary!")
 
                             }
                         }
