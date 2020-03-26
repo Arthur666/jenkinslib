@@ -35,7 +35,7 @@ pipeline {
                 timeout(time:5, unit:"MINUTES"){    //步骤超时时间
                     script{ //填写运行代码
                         println('获取代码')
-                        tools.PrintMes("获取代码","green")
+                        tools.PrintMes("获取代码",'green')
                         println("$test")
                         
                         input id: 'Selection', message: '是否继续执行？', ok: '继续吧！', parameters: [choice(choices: ['a', 'b'], description: '', name: 'test1')], submitter: 'liuyz,admin'
